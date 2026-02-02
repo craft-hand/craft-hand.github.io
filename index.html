@@ -64,6 +64,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">A Soft Tendon-Driven Dexterous Hand for Robust Teleoperation and Learning</h1>
+          <!--
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://www.leo-lin.com">Leo Lin</a><sup>1</sup>,</span>
@@ -79,6 +80,7 @@
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>University of Illinois Urbana-Champaign</span>
           </div>
+          -->
 
           <div class="column has-text-centered">
             <div class="publication-links">
@@ -110,6 +112,16 @@
                       <i class="fas fa-list"></i>
                   </span>
                   <span>BOM</span>
+                  </a>
+              </span>
+              <!-- URDF Link. -->
+              <span class="link-block">
+                <a href="https://github.com/create-hand/CRAFT-hand-URDF"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-robot"></i>
+                  </span>
+                  <span>URDF</span>
                   </a>
               </span>
             </div>
@@ -183,6 +195,69 @@
     </div>
     <!--/ Abstract. -->
 
+  </div>
+</section>
+
+
+<!-- Teleoperation Section -->
+<section class="hero is-dark">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Teleoperation</h2>
+      <p class="subtitle">
+        <a href="https://www.manus-meta.com/" style="color: #ff69b4;">MANUS MoCap Glove</a> teleoperation
+      </p>
+      
+      <!-- Main Video -->
+      <div class="has-text-centered" style="margin-bottom: 2rem;">
+        <video autoplay controls muted loop playsinline style="width: 100%; max-width: 800px; border-radius: 10px;">
+          <source src="./static/videos/teleop_main.mp4" type="video/mp4">
+        </video>
+      </div>
+      
+      <!-- Task Videos Grid -->
+      <div class="columns is-multiline is-centered">
+        <!-- Row 1 -->
+        <div class="column is-one-third has-text-centered">
+          <video autoplay muted loop playsinline style="width: 100%; border-radius: 10px;">
+            <source src="./static/videos/teleop_screwdriver.mp4" type="video/mp4">
+          </video>
+          <p class="has-text-white">Screwdriver <span style="color: #ff69b4;">(2x)</span></p>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <video autoplay muted loop playsinline style="width: 100%; border-radius: 10px;">
+            <source src="./static/videos/teleop_musicbox.mp4" type="video/mp4">
+          </video>
+          <p class="has-text-white">Music Box <span style="color: #ff69b4;">(2x)</span></p>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <video autoplay muted loop playsinline style="width: 100%; border-radius: 10px;">
+            <source src="./static/videos/teleop_eraser.mp4" type="video/mp4">
+          </video>
+          <p class="has-text-white">Eraser Flipping <span style="color: #ff69b4;">(2x)</span></p>
+        </div>
+        
+        <!-- Row 2 -->
+        <div class="column is-one-third has-text-centered">
+          <video autoplay muted loop playsinline style="width: 100%; border-radius: 10px;">
+            <source src="./static/videos/teleop_battery.mp4" type="video/mp4">
+          </video>
+          <p class="has-text-white">Battery <span style="color: #ff69b4;">(2x)</span></p>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <video autoplay muted loop playsinline style="width: 100%; border-radius: 10px;">
+            <source src="./static/videos/teleop_saw.mp4" type="video/mp4">
+          </video>
+          <p class="has-text-white">Saw <span style="color: #ff69b4;">(20x)</span></p>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <video autoplay muted loop playsinline style="width: 100%; border-radius: 10px;">
+            <source src="./static/videos/teleop_nutella.mp4" type="video/mp4">
+          </video>
+          <p class="has-text-white">Nutella <span style="color: #ff69b4;">(5x)</span></p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
