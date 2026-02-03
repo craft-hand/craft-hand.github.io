@@ -137,7 +137,7 @@
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container has-text-centered">
-      <video autoplay muted loop playsinline style="max-width: 100%; max-height: 500px; border-radius: 10px;">
+      <video autoplay muted loop playsinline loading="lazy" preload="none" style="max-width: 100%; max-height: 500px; border-radius: 10px;">
         <source src="./static/videos/tendon_hand_control.mp4" type="video/mp4">
       </video>
     </div>
@@ -196,7 +196,7 @@
       </div>
       <!-- Timelapse Video -->
       <div class="column is-half has-text-centered">
-        <video autoplay muted loop playsinline style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px;">
+        <video autoplay muted loop playsinline loading="lazy" preload="none" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px;">
           <source src="./static/videos/timelapse_20x_fixed.mp4" type="video/mp4">
         </video>
       </div>
@@ -216,7 +216,7 @@
       
       <!-- Main Video -->
       <div class="has-text-centered" style="margin-bottom: 2rem;">
-        <video autoplay controls muted loop playsinline style="width: 100%; max-width: 800px; border-radius: 10px;">
+        <video autoplay controls muted loop playsinline loading="lazy" preload="none" style="width: 100%; max-width: 800px; border-radius: 10px;">
           <source src="./static/videos/teleop_main.mp4" type="video/mp4">
         </video>
       </div>
@@ -225,19 +225,19 @@
       <div class="columns is-multiline is-centered">
         <!-- Row 1 -->
         <div class="column is-one-third has-text-centered">
-          <video autoplay muted loop playsinline style="width: 100%; border-radius: 10px;">
+          <video autoplay muted loop playsinline loading="lazy" preload="none" style="width: 100%; border-radius: 10px;">
             <source src="./static/videos/wineglassshort.mp4" type="video/mp4">
           </video>
           <p class="has-text-white">Wine Glass <span style="color: #ff69b4;">(2x)</span></p>
         </div>
         <div class="column is-one-third has-text-centered">
-          <video autoplay muted loop playsinline style="width: 100%; border-radius: 10px;">
+          <video autoplay muted loop playsinline loading="lazy" preload="none" style="width: 100%; border-radius: 10px;">
             <source src="./static/videos/wipetableshort.mp4" type="video/mp4">
           </video>
           <p class="has-text-white">Wipe Table <span style="color: #ff69b4;">(2x)</span></p>
         </div>
         <div class="column is-one-third has-text-centered">
-          <video autoplay muted loop playsinline style="width: 100%; border-radius: 10px;">
+          <video autoplay muted loop playsinline loading="lazy" preload="none" style="width: 100%; border-radius: 10px;">
             <source src="./static/videos/balltestshort.mp4" type="video/mp4">
           </video>
           <p class="has-text-white">Ball <span style="color: #ff69b4;">(2x)</span></p>
@@ -245,13 +245,13 @@
         
         <!-- Row 2 -->
         <div class="column is-one-third has-text-centered">
-          <video autoplay muted loop playsinline style="width: 100%; border-radius: 10px;">
+          <video autoplay muted loop playsinline loading="lazy" preload="none" style="width: 100%; border-radius: 10px;">
             <source src="./static/videos/chipbagtestshort.mp4" type="video/mp4">
           </video>
           <p class="has-text-white">Chip Bag <span style="color: #ff69b4;">(2x)</span></p>
         </div>
         <div class="column is-one-third has-text-centered">
-          <video autoplay muted loop playsinline style="width: 100%; border-radius: 10px;">
+          <video autoplay muted loop playsinline loading="lazy" preload="none" style="width: 100%; border-radius: 10px;">
             <source src="./static/videos/raspberrytestshort.mp4" type="video/mp4">
           </video>
           <p class="has-text-white">Raspberry <span style="color: #ff69b4;">(2x)</span></p>
@@ -274,7 +274,7 @@
           <p>
             To teleoperate the hand, we use HAMER, a vision-based transformer to extract MANO hand poses, and directly translate it to the hand.
           </p>
-          <video id="dollyzoom" autoplay muted loop playsinline height="100%">
+          <video id="dollyzoom" autoplay muted loop playsinline loading="lazy" preload="none" height="100%">
             <source src="./static/videos/tendon_hand_teleop_counting.mp4"
                     type="video/mp4">
           </video>
@@ -290,7 +290,7 @@
             <p>
               The soft TPU within the hand is able to deform and conform to the shape of objects it's colliding with, allowing for easier manipulation and is more resilient to damage.
             </p>
-            <video id="matting-video" autoplay muted loop playsinline height="100%">
+            <video id="matting-video" autoplay muted loop playsinline loading="lazy" preload="none" height="100%">
               <source src="./static/videos/tendon_hand.mp4"
                       type="video/mp4">
             </video>
@@ -307,7 +307,7 @@
             <p>
               Our finger design uses a rolling contact joint mechanism for smooth, natural motion.
             </p>
-            <video id="rolling-joint-video" autoplay muted loop playsinline height="100%">
+            <video id="rolling-joint-video" autoplay muted loop playsinline loading="lazy" preload="none" height="100%">
               <source src="./static/videos/tendon_single_finger.mp4"
                       type="video/mp4">
             </video>
@@ -331,19 +331,19 @@
         </div>
         <div class="columns is-centered">
           <div class="column is-one-third has-text-centered">
-            <video autoplay muted loop playsinline style="width: 100%; border-radius: 10px; border: 4px solid #e74c3c;">
+            <video autoplay muted loop playsinline loading="lazy" preload="none" style="width: 100%; border-radius: 10px; border: 4px solid #e74c3c;">
               <source src="./static/videos/joint_sweep_ruka.mp4" type="video/mp4">
             </video>
             <p class="subtitle is-5" style="margin-top: 10px;">RUKA</p>
           </div>
           <div class="column is-one-third has-text-centered">
-            <video autoplay muted loop playsinline style="width: 100%; border-radius: 10px; border: 4px solid #e74c3c;">
+            <video autoplay muted loop playsinline loading="lazy" preload="none" style="width: 100%; border-radius: 10px; border: 4px solid #e74c3c;">
               <source src="./static/videos/joint_sweep_orca.mp4" type="video/mp4">
             </video>
             <p class="subtitle is-5" style="margin-top: 10px;">ORCA</p>
           </div>
           <div class="column is-one-third has-text-centered">
-            <video autoplay muted loop playsinline style="width: 100%; border-radius: 10px; border: 4px solid #27ae60;">
+            <video autoplay muted loop playsinline loading="lazy" preload="none" style="width: 100%; border-radius: 10px; border: 4px solid #27ae60;">
               <source src="./static/videos/ourhand_sweep.mp4" type="video/mp4">
             </video>
             <p class="subtitle is-5" style="margin-top: 10px;">CRAFT</p>
@@ -366,6 +366,8 @@
                    muted
                    loop
                    playsinline
+                   loading="lazy"
+                   preload="none"
                    style="max-height: 400px; width: auto;">
               <source src="./static/videos/uiuc_hand_grasping_test.mp4"
                       type="video/mp4">
@@ -392,6 +394,8 @@
                    muted
                    loop
                    playsinline
+                   loading="lazy"
+                   preload="none"
                    style="max-height: 400px; width: auto;">
               <source src="./static/videos/uiuc_hand.mp4"
                       type="video/mp4">
@@ -404,6 +408,8 @@
                    muted
                    loop
                    playsinline
+                   loading="lazy"
+                   preload="none"
                    style="max-height: 400px; width: auto;">
               <source src="./static/videos/leap_hand.mp4"
                       type="video/mp4">
