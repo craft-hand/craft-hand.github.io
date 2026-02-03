@@ -136,39 +136,10 @@
 
 <section class="hero is-light is-small">
   <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-teleop-counting">
-          <video poster="" id="teleop-counting" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/tendon_hand_teleop_counting.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-tendon-hand">
-          <video poster="" id="tendon-hand" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/tendon_hand.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-tendon-hand2">
-          <video poster="" id="tendon-hand2" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/tendon_hand2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-tendon-hand-control">
-          <video poster="" id="tendon-hand-control" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/tendon_hand_control.mov"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-single-finger">
-          <video poster="" id="single-finger" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/tendon_single_finger.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
+    <div class="container has-text-centered">
+      <video autoplay muted loop playsinline style="max-width: 100%; max-height: 500px; border-radius: 10px;">
+        <source src="./static/videos/tendon_hand_control.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
@@ -325,6 +296,22 @@
             </video>
           </div>
 
+        </div>
+      </div>
+
+      <!-- Rolling Contact Joint. -->
+      <div class="column">
+        <h2 class="title is-3">Rolling Contact Joint</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              Our finger design uses a rolling contact joint mechanism for smooth, natural motion.
+            </p>
+            <video id="rolling-joint-video" autoplay muted loop playsinline height="100%">
+              <source src="./static/videos/tendon_single_finger.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
     </div>
