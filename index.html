@@ -303,7 +303,7 @@
           <p>
             To teleoperate the hand, we use HAMER, a vision-based transformer to extract MANO hand poses, and directly translate it to the hand.
           </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+          <video id="dollyzoom" autoplay muted loop playsinline height="100%">
             <source src="./static/videos/tendon_hand_teleop_counting.mp4"
                     type="video/mp4">
           </video>
@@ -319,7 +319,7 @@
             <p>
               The soft TPU within the hand is able to deform and conform to the shape of objects it's colliding with, allowing for easier manipulation and is more resilient to damage.
             </p>
-            <video id="matting-video" controls playsinline height="100%">
+            <video id="matting-video" autoplay muted loop playsinline height="100%">
               <source src="./static/videos/tendon_hand.mp4"
                       type="video/mp4">
             </video>
@@ -339,8 +339,7 @@
         <h3 class="title is-4" style="text-align: center;">Kinematics and Dexterity</h3>
         <div class="content has-text-centered">
           <p>
-            We have RUKA, which doesn't have adduction-abduction, and ORCA, which doesn't have the DIP joint movement. Our hand demonstrates side to side dexterity in both the finger up and finger down configuration, as well as a DIP joint that moves with the pip joint<br>
-            This is thanks to its Rolling Joint and abduction-adduction mechanism.
+            We have RUKA, which doesn't have adduction-abduction, and ORCA, which doesn't have the DIP joint movement. Our hand demonstrates side to side dexterity in both the finger up and finger down configuration, as well as a DIP joint that moves with the pip joint. This is thanks to its Rolling Joint and abduction-adduction mechanism.
           </p>
         </div>
         <div class="columns is-centered">
@@ -376,9 +375,9 @@
         <div class="columns is-centered">
           <div class="column is-half has-text-centered">
             <video id="replay-video"
-                   controls
+                   autoplay
                    muted
-                   preload
+                   loop
                    playsinline
                    style="max-height: 400px; width: auto;">
               <source src="./static/videos/uiuc_hand_grasping_test.mp4"
@@ -400,11 +399,11 @@
         </div>
         <div class="columns is-centered">
           <div class="column is-half has-text-centered">
-            <h4 class="subtitle is-5">UIUC Hand</h4>
+            <h4 class="subtitle is-5">CRAFT Hand</h4>
             <video id="uiuc-force-video"
-                   controls
+                   autoplay
                    muted
-                   preload
+                   loop
                    playsinline
                    style="max-height: 400px; width: auto;">
               <source src="./static/videos/uiuc_hand.mp4"
@@ -414,9 +413,9 @@
           <div class="column is-half has-text-centered">
             <h4 class="subtitle is-5">LEAP Lite Hand</h4>
             <video id="leap-force-video"
-                   controls
+                   autoplay
                    muted
-                   preload
+                   loop
                    playsinline
                    style="max-height: 400px; width: auto;">
               <source src="./static/videos/leap_hand.mp4"
