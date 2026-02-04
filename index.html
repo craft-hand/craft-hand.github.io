@@ -33,6 +33,10 @@
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/Subject 2.png">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { padding-top: 52px; }
+  </style>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -42,18 +46,20 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
   </div>
-  <div class="navbar-menu">
+  <div class="navbar-menu" id="navMenu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="index.html">Main Page</a>
+      <a class="navbar-item" href="assembly.html">Assembly</a>
+      <a class="navbar-item" href="bom.html">BOM</a>
     </div>
-
   </div>
 </nav>
 
@@ -154,7 +160,7 @@
 
 
 <!-- Hardware Section -->
-<section class="section">
+<section class="section" id="hardware">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Hardware</h2>
     <div class="columns is-centered is-vcentered">
@@ -189,7 +195,7 @@
 
 
 <!-- Teleoperation Section -->
-<section class="hero is-dark">
+<section class="hero is-dark" id="teleoperation">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <h2 class="title is-3">Teleoperation</h2>
@@ -252,7 +258,7 @@
 </section>
 
 
-<section class="section">
+<section class="section" id="design">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
@@ -308,7 +314,7 @@
     <!--/ Matting. -->
 
     <!-- TESTS. -->
-    <div class="columns is-centered">
+    <div class="columns is-centered" id="tests">
       <div class="column is-full-width">
         <h2 class="title is-3">TESTS</h2>
 
@@ -461,6 +467,18 @@
     </div>
   </div>
 </footer>
+
+<script>
+  // Navbar burger toggle for mobile
+  document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.navbar-burger');
+    const menu = document.getElementById('navMenu');
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('is-active');
+      menu.classList.toggle('is-active');
+    });
+  });
+</script>
 
 </body>
 </html>
