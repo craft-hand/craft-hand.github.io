@@ -142,13 +142,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We propose to develop a soft, tendon-driven dexterous hand that is inherently compliant. In contrast to existing dexterous hands, which are often fragile and prone to damage, our design leverages soft materials to improve durability and ease of use.
-          </p>
-          <p>
-            We will implement a control framework from the ground up and integrate it with a vision-based teleoperation system for intuitive manipulation. The hand will be mounted on an xArm, enabling coordinated control of both the arm and hand to replicate human-like actions.
-          </p>
-          <p>
-            We will evaluate the usability of our system against the open-source Leap V1 hand and demonstrate its potential in imitation learning and reinforcement learning applications.
+            We introduce CRAFT Hand, a tendon-driven anthropomorphic hand with hybrid hard-soft compliance for contact-rich manipulation. The design is based on a simple idea: contact is not uniform across the hand. Impacts concentrate at joints, while links carry most of the load. CRAFT places soft material at joints and keeps links rigid, and uses rolling-contact joint surfaces to keep flexion on repeatable motion paths. Fifteen motors mounted off the fingers drive the hand through tendons, keeping the form factor compact and the fingers light. In structural tests, CRAFT improves strength and endurance while maintaining comparable repeatability. In teleoperation, CRAFT improves handling of fragile and low-friction items, and the hand covers 33/33 grasps in the Feix taxonomy. The full design costs under $600 and will be released open-source with vision-based teleoperation and simulation integration.
           </p>
         </div>
       </div>
@@ -268,7 +262,7 @@
         <div class="content">
           <h2 class="title is-3">Vision based teleoperation</h2>
           <p>
-            To teleoperate the hand, we use HAMER, a vision-based transformer to extract MANO hand poses, and directly translate it to the hand.
+            To teleoperate the hand, we use HaMeR, a vision-based transformer to extract MANO hand poses, and directly translate it to the hand.
           </p>
           <video id="dollyzoom" autoplay muted loop playsinline loading="lazy" preload="none" height="100%">
             <source src="./static/videos/tendon_hand_teleop_counting.mp4"
