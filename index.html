@@ -46,6 +46,7 @@
 </head>
 <body>
 
+<!--
 <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
@@ -62,7 +63,7 @@
     </div>
   </div>
 </nav>
-
+-->
 
 <section class="hero">
   <div class="hero-body">
@@ -70,52 +71,59 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">A Soft Tendon-Driven Dexterous Hand for Robust Teleoperation and Learning</h1>
+          <p class="title is-4 publication-authors"><a href="https://www.leo-lin.com/">Leo Lin</a>*<sup>1</sup>, <a href="https://shivanshpatel35.github.io/">Shivansh Patel</a>*<sup>1</sup>, <a href="https://seji.artstation.com/">Jay Moon</a>*<sup>1</sup>, <a href="https://slazebni.cs.illinois.edu/">Svetlana Lazebnik</a>†<sup>1</sup>, <a href="https://unnat.github.io/">Unnat Jain</a>†<sup>2</sup></p>
+          <p class="publication-affiliations">
+            <sup>1</sup>University of Illinois Urbana-Champaign &nbsp;&nbsp; <sup>2</sup>UC Irvine<br>
+            <span class="equal-contribution">* Equal contribution</span> &nbsp;&nbsp; <span class="equal-advisors">† Equal advising</span>
+          </p>
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="static/pdfs/paper.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+            </div>
+          </div>
+          <!--
+          <div class="column has-text-centered">
+            <div class="publication-links">
               <span class="link-block">
                 <a href="https://www.youtube.com/@SEJl_/videos"
                    class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
+                  <span class="icon"><i class="fab fa-youtube"></i></span>
                   <span>Video</span>
                 </a>
               </span>
-              <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://github.com/craft-hand"
                    class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
+                  <span class="icon"><i class="fab fa-github"></i></span>
                   <span>Code</span>
-                  </a>
+                </a>
               </span>
-              <!-- BOM Link. -->
               <span class="link-block">
                 <a href="https://docs.google.com/spreadsheets/d/1lCmkizPPBh9djAw1-P_Eejx8kuWkG26VQc7ffKtqeOM/edit?usp=sharing"
                    class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-list"></i>
-                  </span>
+                  <span class="icon"><i class="fas fa-list"></i></span>
                   <span>BOM</span>
-                  </a>
+                </a>
               </span>
-              <!-- URDF Link. -->
               <span class="link-block">
                 <a href="https://github.com/create-hand/CRAFT-hand-URDF"
                    class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-robot"></i>
-                  </span>
+                  <span class="icon"><i class="fas fa-robot"></i></span>
                   <span>URDF</span>
-                  </a>
+                </a>
               </span>
             </div>
-
           </div>
+          -->
         </div>
       </div>
     </div>
@@ -308,12 +316,13 @@
     <!--/ Matting. -->
 
     <!-- TESTS. -->
+    <hr>
     <div class="columns is-centered" id="tests">
       <div class="column is-full-width">
-        <h2 class="title is-3">TESTS</h2>
+        <h2 class="title is-3 has-text-centered">TESTS</h2>
 
         <!-- Kinematics and Dexterity. -->
-        <h3 class="title is-4" style="text-align: center;">Kinematics and Dexterity</h3>
+        <h3 class="title is-4" style="text-align: left;">Kinematics and Dexterity</h3>
         <div class="content has-text-centered">
           <p>
             We have RUKA, which doesn't have adduction-abduction, and ORCA, which doesn't have the DIP joint movement. Our hand demonstrates side to side dexterity in both the finger up and finger down configuration, as well as a DIP joint that moves with the pip joint. This is thanks to its Rolling Joint and abduction-adduction mechanism.
@@ -413,28 +422,26 @@
     <!--/ Animation. -->
 
 
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Related Links</h2>
 
         <div class="content has-text-justified">
         </div>
       </div>
-    </div>
-    <!--/ Concurrent Work. -->
+    </div> -->
 
   </div>
 </section>
 
 
-<section class="section" id="BibTeX">
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>
-}</code></pre>
+</code></pre>
   </div>
-</section>
+</section> -->
 
 
 <footer class="footer">
@@ -448,13 +455,7 @@
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This website template is based on <a
-              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+            Website template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> and <a href="https://rekep-robot.github.io/">ReKep</a>.
           </p>
         </div>
       </div>

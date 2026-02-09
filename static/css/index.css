@@ -53,6 +53,14 @@ body {
 
 .publication-authors {
     font-family: 'Google Sans', sans-serif;
+    font-weight: normal;
+}
+
+.publication-affiliations {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.5rem;
+    font-weight: normal;
 }
 
 .publication-venue {
