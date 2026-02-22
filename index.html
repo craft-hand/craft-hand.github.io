@@ -167,7 +167,7 @@
     <h2 class="title is-3 has-text-centered">Hardware</h2>
     <div class="columns is-centered is-vcentered">
       <!-- Sketchfab Embed -->
-      <div class="column is-half">
+      <div class="column is-half has-text-centered">
         <div class="sketchfab-embed-wrapper" style="width: 100%;">
           <iframe 
             title="Crate hand v5 v1" 
@@ -184,12 +184,14 @@
             style="width: 100%; height: 400px; border-radius: 10px;">
           </iframe>
         </div>
+        <p class="subtitle is-6" style="margin-top: 10px;">Interactive CAD Model</p>
       </div>
       <!-- Timelapse Video -->
       <div class="column is-half has-text-centered">
         <video autoplay muted loop playsinline loading="lazy" preload="none" style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px;">
           <source src="./static/videos/timelapse_20x_fixed.mp4" type="video/mp4">
         </video>
+        <p class="subtitle is-6" style="margin-top: 10px;">Assembly Time Lapse</p>
       </div>
     </div>
   </div>
@@ -202,7 +204,7 @@
     <div class="container is-max-desktop">
       <h2 class="title is-3">Teleoperation</h2>
       <p class="subtitle">
-        <a href="https://github.com/craft-hand/hand-hamer-vision-teleop" style="color: #ff69b4;">Vision Based</a> teleoperation
+        <a href="https://github.com/craft-hand/hand-hamer-vision-teleop" style="color: #ff69b4;">Vision-Based</a> Teleoperation. All Videos <span style="color: #ff69b4;">2X</span>
       </p>
       
       <!-- Main Video -->
@@ -210,49 +212,49 @@
         <video autoplay controls muted loop playsinline loading="lazy" preload="none" style="width: 100%; max-width: 800px; border-radius: 10px;">
           <source src="./static/videos/raspberrytestshort.mp4" type="video/mp4">
         </video>
-        <p class="has-text-white" style="margin-top: 10px;">Raspberry <span style="color: #ff69b4;">(2x)</span></p>
+        <p class="has-text-white" style="margin-top: 10px;">Pick Raspberry</p>
       </div>
       
-      <!-- Task Videos Grid -->
+      <!-- Task Videos Grid (3 rows x 2 columns) -->
       <div class="columns is-multiline is-centered">
         <!-- Row 1 -->
-        <div class="column is-one-third has-text-centered">
+        <div class="column is-half has-text-centered">
           <video autoplay muted loop playsinline loading="lazy" preload="none" style="width: 100%; border-radius: 10px;">
             <source src="./static/videos/wineglassshort.mp4" type="video/mp4">
           </video>
-          <p class="has-text-white">Wine Glass <span style="color: #ff69b4;">(2x)</span></p>
+          <p class="has-text-white">Pour Wine Glass</p>
         </div>
-        <div class="column is-one-third has-text-centered">
+        <div class="column is-half has-text-centered">
           <video autoplay muted loop playsinline loading="lazy" preload="none" style="width: 100%; border-radius: 10px;">
             <source src="./static/videos/wipetableshort.mp4" type="video/mp4">
           </video>
-          <p class="has-text-white">Wipe Table <span style="color: #ff69b4;">(2x)</span></p>
+          <p class="has-text-white">Wipe Table</p>
         </div>
-        <div class="column is-one-third has-text-centered">
+        <!-- Row 2 -->
+        <div class="column is-half has-text-centered">
           <video autoplay muted loop playsinline loading="lazy" preload="none" style="width: 100%; border-radius: 10px;">
             <source src="./static/videos/balltestshort.mp4" type="video/mp4">
           </video>
-          <p class="has-text-white">Ball <span style="color: #ff69b4;">(2x)</span></p>
+          <p class="has-text-white">Hold Ball</p>
         </div>
-        
-        <!-- Row 2 -->
-        <div class="column is-one-third has-text-centered">
+        <div class="column is-half has-text-centered">
           <video autoplay muted loop playsinline loading="lazy" preload="none" style="width: 100%; border-radius: 10px;">
             <source src="./static/videos/chipbagtestshort.mp4" type="video/mp4">
           </video>
-          <p class="has-text-white">Chip Bag <span style="color: #ff69b4;">(2x)</span></p>
+          <p class="has-text-white">Lift Chip Bag</p>
         </div>
-        <div class="column is-one-third has-text-centered">
+        <!-- Row 3 -->
+        <div class="column is-half has-text-centered">
           <video autoplay muted loop playsinline loading="lazy" preload="none" style="width: 100%; border-radius: 10px;">
             <source src="./static/videos/plushtoyshort_2x.mp4" type="video/mp4">
           </video>
-          <p class="has-text-white">Plush Toy <span style="color: #ff69b4;">(2x)</span></p>
+          <p class="has-text-white">Carry Plush Toy</p>
         </div>
-        <div class="column is-one-third has-text-centered">
+        <div class="column is-half has-text-centered">
           <video autoplay muted loop playsinline loading="lazy" preload="none" style="width: 100%; border-radius: 10px;">
             <source src="./static/videos/toasttestshort_2x.mp4" type="video/mp4">
           </video>
-          <p class="has-text-white">Toast <span style="color: #ff69b4;">(2x)</span></p>
+          <p class="has-text-white">Grip Toast</p>
         </div>
       </div>
     </div>
@@ -268,9 +270,9 @@
       <!-- vision based teleoperation. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Vision based teleoperation</h2>
+          <h2 class="title is-3">Vision-Based Teleop</h2>
           <p>
-            To teleoperate the hand, we use HaMeR, a vision-based transformer to extract MANO hand poses, and directly translate it to the hand.
+            To teleoperate, we use HaMeR, a transformer-based hand pose estimator that extracts MANO hand poses from monocular RGB and maps them directly to the hand.
           </p>
           <video id="dollyzoom" autoplay muted loop playsinline loading="lazy" preload="none" height="100%">
             <source src="./static/videos/tendon_hand_teleop_counting.mp4"
@@ -282,11 +284,11 @@
 
       <!-- Matting. -->
       <div class="column">
-        <h2 class="title is-3">Compliance</h2>
+        <h2 class="title is-3">Passive Compliance</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              The soft TPU within the hand is able to deform and conform to the shape of objects it's colliding with, allowing for easier manipulation and is more resilient to damage.
+              The soft joints deform upon contact, passively conforming to object surfaces and directly absorbing impact forces that would otherwise damage a rigid hand.
             </p>
             <video id="compliance-top-video" autoplay muted loop playsinline loading="lazy" preload="none" height="100%" style="display: block;">
               <source src="./static/videos/compliance1.mp4"
@@ -307,7 +309,7 @@
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              Our finger design uses a rolling contact joint mechanism for smooth, natural motion.
+              Our finger design uses a rolling contact joint mechanism that constrains motion to a repeatable path for smooth, natural and predictable articulation throughout the range of motion.
             </p>
             <video id="rolling-joint-video" autoplay muted loop playsinline loading="lazy" preload="none" height="100%">
               <source src="./static/videos/tendon_single_finger.mp4"
@@ -340,7 +342,7 @@
             <p class="subtitle is-5" style="margin-top: 10px;">RUKA</p>
             <p class="subtitle" style="margin-top: -20px; margin-bottom: 0; color: #b3261e; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2rem; line-height: 1;">
               <span aria-hidden="true" style="font-size: 4rem; line-height: 0.8; font-weight: 700;">&times;</span>
-              <span>Hold Pen or Chopsticks</span>
+              <span>Hold pen or chopsticks</span>
             </p>
           </div>
           <div class="column is-one-third has-text-centered">
@@ -350,7 +352,7 @@
             <p class="subtitle is-5" style="margin-top: 10px;">ORCA</p>
             <p class="subtitle" style="margin-top: -20px; margin-bottom: 0; color: #b3261e; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2rem; line-height: 1;">
               <span aria-hidden="true" style="font-size: 4rem; line-height: 0.8; font-weight: 700;">&times;</span>
-              <span style="text-align: left;">Power grip small tools,<br>Pick up coins</span>
+              <span style="text-align: left;">Power grip small tools<br>Pick up coins</span>
             </p>
           </div>
           <div class="column is-one-third has-text-centered">
@@ -358,6 +360,14 @@
               <source src="./static/videos/ourhand_sweep.mp4" type="video/mp4">
             </video>
             <p class="subtitle is-5" style="margin-top: 10px;">CRAFT</p>
+            <p class="subtitle" style="margin-top: -20px; margin-bottom: 0; color: #27ae60; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2rem; line-height: 1;">
+              <span aria-hidden="true" style="display: inline-block; width: 4rem; height: 4rem; line-height: 0.8; flex-shrink: 0;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                <path d="M5 13l4 4L19 7"/>
+              </svg>
+            </span>
+              <span style="text-align: left;">Hold pen or chopsticks<br>Power grip small tools<br>Pick up coins</span>
+            </p>
           </div>
         </div>
         <br>
@@ -372,44 +382,49 @@
         </div>
         <div class="columns is-centered">
           <div class="column is-half has-text-centered">
-            <video id="replay-video"
-                   autoplay
-                   muted
-                   loop
-                   playsinline
-                   loading="lazy"
-                   preload="none"
-                   style="max-height: 400px; width: auto;">
-              <source src="./static/videos/craft_hand_grasping_test.mp4"
-                      type="video/mp4">
-            </video>
+            <div class="repeatability-video-wrapper">
+              <video id="replay-video"
+                     class="repeatability-video"
+                     autoplay
+                     muted
+                     loop
+                     playsinline
+                     loading="lazy"
+                     preload="none">
+                <source src="./static/videos/craft_hand_grasping_test.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
           </div>
           <div class="column is-half has-text-centered">
-            <video id="error-comparison-video"
-                   autoplay
-                   muted
-                   loop
-                   playsinline
-                   loading="lazy"
-                   preload="none"
-                   style="max-height: 400px; width: auto;">
-              <source src="./static/videos/error_comparison_10s.mp4"
-                      type="video/mp4">
-            </video>
+            <div class="repeatability-video-wrapper repeatability-video-wrapper-wide">
+              <video id="error-comparison-video"
+                     class="repeatability-video"
+                     autoplay
+                     muted
+                     loop
+                     playsinline
+                     loading="lazy"
+                     preload="none">
+                <source src="./static/videos/error_comparison_10s.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
           </div>
         </div>
         <!--/ Re-rendering. -->
 
         <!-- Force Testing. -->
-        <h3 class="title is-4">Force Testing Comparison</h3>
+        <br>
+        <br>
+        <h3 class="title is-4">Pull-Out Test</h3>
         <div class="content has-text-justified">
           <p>
-            Force testing comparison using ArUco codes for tracking motor bend angle. Our hand shows much stronger force before bending to 15 degrees compared to the LEAP Lite hand (both using the same Dynamixel motors).
+            We measure pull-out force by tracking finger deflection with ArUco markers, recording the maximum force sustained before the fingertip deflects beyond 15°. CRAFT withstands nearly double the force of LEAP Lite before reaching this threshold.
           </p>
         </div>
         <div class="columns is-centered">
           <div class="column is-half has-text-centered">
-            <h4 class="subtitle is-5">CRAFT Hand</h4>
             <video id="craft-force-video"
                    autoplay
                    muted
@@ -421,9 +436,9 @@
               <source src="./static/videos/craft_hand.mp4"
                       type="video/mp4">
             </video>
+            <h4 class="subtitle is-5">CRAFT Hand</h4>
           </div>
           <div class="column is-half has-text-centered">
-            <h4 class="subtitle is-5">LEAP Lite Hand</h4>
             <video id="leap-force-video"
                    autoplay
                    muted
@@ -435,6 +450,7 @@
               <source src="./static/videos/leap_hand.mp4"
                       type="video/mp4">
             </video>
+            <h4 class="subtitle is-5">LEAP Lite Hand</h4>
           </div>
         </div>
         <!--/ Force Testing. -->
@@ -463,7 +479,7 @@
         <h2 class="title is-3">Acknowledgements</h2>
         <div class="content has-text-justified">
           <p>
-            We are grateful for the support of School of ICS at UC Irvine. We are grateful to Steven Oh and Kenneth Shaw for their help with LEAP v2 demonstrations.
+            We thank the School of Information and Computer Sciences at UC Irvine for their support. We are grateful to Steven Oh and Kenneth Shaw for their assistance with LEAP V2 demonstrations, and to the members of SIGRobotics for helpful discussions. This work was supported in part by the 1517 Fund and Dynamixel.
           </p>
         </div>
       </div>

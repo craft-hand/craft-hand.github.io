@@ -163,3 +163,21 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.repeatability-video-wrapper {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.repeatability-video {
+  max-height: 100%;
+  width: auto;
+}
+
+.repeatability-video-wrapper-wide .repeatability-video {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
