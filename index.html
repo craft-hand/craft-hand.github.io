@@ -265,61 +265,70 @@
 <section class="section" id="design">
   <div class="container is-max-desktop">
 
+    <!-- Vision-based teleoperation row. -->
     <div class="columns is-centered">
-
-      <!-- vision based teleoperation. -->
-      <div class="column">
+      <div class="column is-full-width">
         <div class="content">
-          <h2 class="title is-3">Vision-Based Teleop</h2>
+          <h2 class="title is-3">Vision-Based Teleoperation</h2>
           <p>
-            To teleoperate, we use HaMeR, a transformer-based hand pose estimator that extracts MANO hand poses from monocular RGB and maps them directly to the hand.
+            We use FrankMocap for whole-body tracking to estimate wrist pose
+            and HaMeR for hand pose estimation. Together, these drive
+            simultaneous control of the arm and hand from a single RGB camera.
           </p>
-          <video id="dollyzoom" autoplay muted loop playsinline loading="lazy" preload="none" height="100%">
-            <source src="./static/videos/tendon_hand_teleop_counting.mp4"
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered is-vcentered">
+      <div class="column is-7-desktop is-6-tablet" style="display: flex; align-items: center;">
+        <video autoplay muted loop playsinline loading="lazy" preload="none" height="100%" style="width: 100%; max-width: 720px; margin: 0 auto; display: block;">
+          <source src="./static/videos/intermediate_outputs.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-4-desktop is-6-tablet">
+        <video autoplay muted loop playsinline loading="lazy" preload="none" height="100%" style="width: 100%; max-width: 260px; margin: 0 auto; display: block;">
+          <source src="./static/videos/tendon_hand_teleop_counting.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <!--/ Vision-based teleoperation row. -->
+
+    <br>
+    <!-- Passive compliance and rolling contact joint row. -->
+    <div class="columns is-centered">
+      <div class="column is-5-desktop is-6-tablet">
+        <div class="content">
+          <h2 class="title is-3">Passive Compliance</h2>
+          <p>
+            The soft joints deform upon contact, passively conforming to object surfaces and directly absorbing impact forces that would otherwise damage a rigid hand.
+          </p>
+          <video id="compliance-top-video" autoplay muted loop playsinline loading="lazy" preload="none" height="100%" style="width: 100%; max-width: 460px; margin: 0 auto; display: block;">
+            <source src="./static/videos/compliance1.mp4"
+                    type="video/mp4">
+          </video>
+          <video id="compliance-bottom-video" autoplay muted loop playsinline loading="lazy" preload="none" height="100%" style="width: 100%; max-width: 460px; margin: 0 auto; display: block;">
+            <source src="./static/videos/compliance2.mp4"
                     type="video/mp4">
           </video>
         </div>
       </div>
-      <!--/ Visual Effects. -->
 
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Passive Compliance</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              The soft joints deform upon contact, passively conforming to object surfaces and directly absorbing impact forces that would otherwise damage a rigid hand.
-            </p>
-            <video id="compliance-top-video" autoplay muted loop playsinline loading="lazy" preload="none" height="100%" style="display: block;">
-              <source src="./static/videos/compliance1.mp4"
-                      type="video/mp4">
-            </video>
-            <video id="compliance-bottom-video" autoplay muted loop playsinline loading="lazy" preload="none" height="100%" style="display: block;">
-              <source src="./static/videos/compliance2.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Rolling Contact Joint. -->
-      <div class="column">
-        <h2 class="title is-3">Rolling Contact Joint</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              Our finger design uses a rolling contact joint mechanism that constrains motion to a repeatable path for smooth, natural and predictable articulation throughout the range of motion.
-            </p>
-            <video id="rolling-joint-video" autoplay muted loop playsinline loading="lazy" preload="none" height="100%">
-              <source src="./static/videos/tendon_single_finger.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
+      <div class="column is-5-desktop is-6-tablet">
+        <div class="content">
+          <h2 class="title is-3">Rolling Contact Joint</h2>
+          <p>
+            Our finger design uses a rolling contact joint mechanism that constrains motion to a repeatable path for smooth, natural and predictable articulation throughout the range of motion.
+          </p>
+          <video id="rolling-joint-video" autoplay muted loop playsinline loading="lazy" preload="none" height="100%" style="width: 100%; max-width: 460px; margin: 0 auto; display: block;">
+            <source src="./static/videos/tendon_single_finger.mp4"
+                    type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
-    <!--/ Matting. -->
+    <!--/ Passive compliance and rolling contact joint row. -->
 
     <!-- TESTS. -->
     <hr>
@@ -479,7 +488,7 @@
         <h2 class="title is-3">Acknowledgements</h2>
         <div class="content has-text-justified">
           <p>
-            We thank the School of Information and Computer Sciences at UC Irvine for their support. We are grateful to Steven Oh and Kenneth Shaw for their assistance with LEAP V2 demonstrations, and to the members of SIGRobotics for helpful discussions. This work was supported in part by the 1517 Fund and Dynamixel.
+            We thank the Siebel School Robotics Lab at UIUC and the School of Information and Computer Sciences at UC Irvine for their support. We are grateful to Steven Oh and Kenneth Shaw for their assistance with LEAP V2 demonstrations, and to the members of UIUC SIGRobotics for helpful discussions. This work was supported in part by the 1517 Fund and Dynamixel.
           </p>
         </div>
       </div>
